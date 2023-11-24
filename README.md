@@ -53,7 +53,6 @@ Log out and log back in (or reboot) for changes to take effect
 Clone the CVAT source code from the GitHub repository using Git:
 
 ```bash
-Copy code
 git clone https://github.com/opencv/cvat
 cd cvat
 ```
