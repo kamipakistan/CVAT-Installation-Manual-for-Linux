@@ -58,7 +58,7 @@ git clone https://github.com/opencv/cvat
 cd cvat
 ```
 
-# Step - 6
+## Step - 6
 ## Configure CVAT Environment
 Set the CVAT_HOST environment variable to enable access over a network:
 
@@ -66,7 +66,7 @@ Set the CVAT_HOST environment variable to enable access over a network:
 export CVAT_HOST=your-ip-address
 ```
 
-# Step - 7
+## Step - 7
 ## Run Docker Containers
 Start the CVAT Docker containers. This may take some time to download the required images and create containers:
 
@@ -81,7 +81,7 @@ CVAT_VERSION=dev docker-compose up -d
 
 For more options, refer to How to pull/build/update CVAT images.
 
-# Step - 8
+## Step - 8
 ## Verify Installation
 Ensure that the local version of CVAT is working correctly by checking the server logs:
 
@@ -94,7 +94,7 @@ docker logs cvat_server
 When running the CVAT server for the first time, create a superuser account using the following command:
 
 ```bash
-docker exec -it cvat_server bash -ic 'python3 ~/manage.py createsuperuser'
+docker exec -it cvat_server bash -ic 'python3 ~/manage.py create superuser'
 ```
 Follow the prompts to choose a username and password for the superuser account.
 
